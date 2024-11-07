@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription - TEDx Paris 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+            /* Espace entre les boutons */
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        progress {
+            width: 100%;
+            height: 20px;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function updateProgress() {
+            const inputs = document.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea');
+            let filledInputs = 0;
+
+            inputs.forEach(input => {
+                if (input.value) {
+                    filledInputs++;
+                }
+            });
+
+            const progress = document.getElementById('progress');
+            progress.value = (filledInputs / inputs.length) * 100;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Noms et Prénoms : Soufiane Zougagh -->
+    <header>
+        <h1>Inscription à l'événement TEDx Paris 2025</h1>
+    </header>
+    <section>
+        <form action="traitement.php" method="post" oninput="updateProgress()">
+            <table>
+                <tr>
+                    <td><label for="nom">Nom :</label></td>
+                    <td><input type="text" id="nom" name="nom" placeholder="Votre nom" maxlength="50" required></td>
+                </tr>
+                <tr>
+                    <td><label for="prenom">Prénom :</label></td>
+                    <td><input type="text" id="prenom" name="prenom" placeholder="Votre prénom" maxlength="50" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email :</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="exemple@domaine.com" maxlength="100"
+                            required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Mot de passe :</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="telephone">Téléphone :</label></td>
+                    <td><input type="tel" id="telephone" name="telephone" placeholder="0123456789" maxlength="10"
+                            required></td>
+                </tr>
+                <tr>
+                    <td><label for="departement">Numéro de département :</label></td>
+                    <td><input type="number" id="departement" name="departement" placeholder="75" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pays">Pays :</label></td>
+                    <td>
+                        <select id="pays" name="pays" required>
+                            <option value="">Sélectionnez un pays</option>
+                            <option value="France">France</option>
+                            <option value="Belgique">Belgique</option>
+                            <option value="Suisse">Suisse</option>
+                            <option value="Canada">Canada</option>
+                            <!-- Ajoutez d'autres pays si nécessaire -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="url">URL :</label></td>
+                    <td><input type="text" id="url" name="url" placeholder="https://votreurl.com" maxlength="200"></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Message :</label></td>
+                    <td><textarea id="message" name="message" rows="5" placeholder="Votre message ici"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="radio">Choisissez une option :</label></td>
+                    <td>
+                        <input type="radio" id="option1" name="options" value="Option 1" required>
+                        <label for="option1">Option 1</label>
+                        <input type="radio" id="option2" name="options" value="Option 2">
+                        <label for="option2">Option 2</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="ville">Sélectionnez votre ville :</label></td>
+                    <td>
+                        <select id="ville" name="ville" required>
+                            <option value="">Sélectionnez une ville</option>
+                            <option value="Nice">Nice</option>
+                            <option value="Paris">Paris</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="avatar">Téléchargez votre fichier :</label></td>
+                    <td><input type="file" id="avatar" name="avatar"></td>
+                </tr>
+                <tr>
+                    <td><label>Jauge :</label></td>
+                    <td>
+                        <input type="range">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="checkbox">J'accepte les conditions :</label></td>
+                    <td><input type="checkbox" id="checkbox" name="conditions" required></td>
+                </tr>
+<tr>
+    <td colspan="2" style="text-align: center;">
+        <button type="submit" class="btn-valider">Valider</button>
+        <a href="../Mission4/accueil.html" class="btn-retour">Retour au sommaire</a>
+    </td>
+</tr>
+
+            </table>
+        </form>
+    </section>
+</body>
+
+</html>

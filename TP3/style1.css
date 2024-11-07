@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Prend toute la hauteur de la fenêtre */
+}
+
+.container {
+    background-color: white;
+    max-width: 400px;
+    width: 100%;
+    /* Prend toute la largeur disponible */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    /* Alignement à gauche pour les champs de formulaire */
+}
+
+h1 {
+    text-align: center;
+    /* Titre centré */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    /* Couleur du texte des labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    /* Remplit toute la largeur du conteneur */
+    padding: 10px;
+    margin-bottom: 15px;
+    /* Espacement inférieur */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    /* Transition pour le changement de couleur */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    /* Couleur de bordure au focus */
+    outline: none;
+    /* Supprimer le contour par défaut */
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    /* Taille du texte */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    /* Transitions */
+}
+
+input[type="submit"]:hover {
+    background-color: green;
+    /* Couleur de fond au survol */
+    color: #ffe600;
+    /* Couleur du texte au survol */
+    transform: scale(1.05);
+    /* Légère augmentation de la taille */
+}
+
+input[type="submit"]:active {
+    transform: scale(0.95);
+    /* Réduit la taille lors du clic */
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Navigation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Conteneur principal */
+        .container {
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 600px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            /* Utilisation de Flexbox */
+            flex-direction: column;
+            /* Orientation verticale */
+            align-items: center;
+            /* Centre les éléments horizontalement */
+            justify-content: center;
+            /* Centre les éléments verticalement */
+            height: 400px;
+            /* Hauteur pour centrer les éléments */
+        }
+
+        /* Style des boutons */
+        .button {
+            background-color: #ffcc00;
+            /* Couleur de fond */
+            color: #003366;
+            /* Couleur du texte */
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+            /* Supprime le soulignement */
+            display: inline-block;
+            /* Permet d'appliquer padding et margin */
+        }
+
+        .button:hover {
+            background-color: #e6b800;
+            /* Couleur au survol */
+            transform: scale(1.05);
+            /* Agrandissement au survol */
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        Page d'Exercice
+    </header>
+
+    <!-- Conteneur principal -->
+    <div class="container">
+
+        <!-- Boutons de navigation -->
+        <a href="accueil.html" class="button">Exercice 1</a>
+        <a href="page.html" class="button">Exercice 2</a>
+        <a href="../index.html" class="button">Retour</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+    </footer>
+
+</body>
+
+</html>

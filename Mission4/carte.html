@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte de Visite</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .business-card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 400px;
+            /* Augmenté la largeur */
+            text-align: center;
+            padding: 30px;
+            /* Augmenté le padding */
+        }
+
+        .business-card img {
+            border-radius: 50%;
+            width: 150px;
+            /* Augmenté la taille de l'image */
+            height: 150px;
+            /* Augmenté la taille de l'image */
+            margin-bottom: 20px;
+            /* Augmenté la marge */
+        }
+
+        .business-card h1 {
+            margin: 0;
+            font-size: 32px;
+            /* Augmenté la taille de la police */
+            color: #333;
+        }
+
+        .business-card p {
+            margin: 15px 0;
+            /* Augmenté la marge */
+            font-size: 18px;
+            /* Augmenté la taille de la police */
+            color: #666;
+        }
+
+        .social-links {
+            margin-top: 15px;
+            /* Augmenté la marge */
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+            /* Augmenté l'espacement entre les liens */
+            font-size: 16px;
+            /* Augmenté la taille de la police des liens */
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            /* Augmenté la marge */
+            padding: 15px 20px;
+            /* Augmenté le padding */
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            /* Augmenté la taille de la police du bouton */
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+            /* Couleur au survol */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="business-card">
+        <img src="https://assets.goal.com/images/v3/bltd58c4d60ecd9275e/GOAL_-_Blank_WEB_-_Facebook_-_2023-06-13T135350.847.png?auto=webp&format=pjpg&width=3840&quality=60"
+            alt="Photo de Profil">
+        <h1>Soufiane ZOUGAGH</h1>
+        <p>Développeur Web</p>
+        <p>Passionné par le développement front-end et les technologies modernes comme HTML, CSS, et JavaScript.</p>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+        <a href="../Mission4/accueil.html" class="back-button">Retour vers la page d'accueil</a>
+    </div>
+</body>
+
+</html>

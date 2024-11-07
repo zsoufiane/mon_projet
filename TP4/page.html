@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Stylisée</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #003366;
+            /* Couleur du FC Barcelone */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Section contenant les 3 div principaux */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        /* Style des blocks principaux */
+        .block {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Fixer une hauteur minimale pour les blocs */
+        .block {
+            min-height: 400px;
+            /* Ajustez cette valeur si nécessaire */
+        }
+
+        /* Style du titre et de la description */
+        .title-block {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .description-block {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+            /* Permet au bloc de description de prendre tout l'espace disponible */
+        }
+
+        /* Style de l'image */
+        .image-block {
+            margin-top: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Style du bouton retour */
+        .back-button {
+            background-color: #ffcc00;
+            /* Couleur du bouton */
+            color: #003366;
+            /* Couleur du texte */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            /* Supprime le soulignement */
+        }
+
+        .back-button:hover {
+            background-color: #e6b800;
+            /* Couleur du bouton au survol */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>Présentation de mon personnage</header>
+
+    <!-- Section avec 3 div principaux -->
+    <section class="container">
+        <!-- Block 1 -->
+        <div class="block">
+            <div class="title-block">
+                <h2>Introduction</h2>
+            </div>
+            <div class="description-block">
+                <p>Lionel Messi est un footballeur argentin, né le 24 juin 1987 à Rosario. Il est largement considéré
+                    comme l'un des meilleurs joueurs de football de l'histoire. Messi a remporté de nombreux titres, y
+                    compris plusieurs Ballons d'Or, et est connu pour ses dribbles impressionnants, sa vision de jeu et
+                    sa capacité à marquer des buts.</p>
+            </div>
+        </div>
+
+        <!-- Block 2 -->
+        <div class="block">
+            <div class="title-block">
+                <h2>Lionel Messi</h2>
+            </div>
+            <div class="description-block">
+                <div class="image-block">
+                    <img src="https://assets-fr.imgfoot.com/messi-chambre.jpg" alt="Lionel Messi">
+                </div>
+            </div>
+        </div>
+
+        <!-- Block 3 -->
+        <div class="block">
+            <div class="title-block">
+                <h2>Résumé</h2>
+            </div>
+            <div class="description-block">
+                <p>Lionel Messi a débuté sa carrière professionnelle au FC Barcelone en 2004, où il a remporté 10 titres
+                    de la Liga, 7 Coupes du Roi et 4 Ligues des Champions. En 2021, il a rejoint le Paris Saint-Germain.
+                    Messi est également le meilleur buteur de l'histoire du football, avec plus de 700 buts en club et
+                    en sélection nationale.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="../TP4/centre.html" class="back-button">Retour</a>
+    </footer>
+
+</body>
+
+</html>

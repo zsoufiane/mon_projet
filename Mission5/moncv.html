@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de Soufiane Zougagh</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #800000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #800000;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #800000;
+            margin: 20px 0 10px;
+            padding-bottom: 5px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-picture {
+            flex: 0 0 120px;
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border: 2px solid #800000;
+        }
+
+        p {
+            margin: 5px 0;
+            color: #800000;
+        }
+
+        .experience-item {
+            padding: 10px;
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .date {
+            font-weight: bold;
+            color: #800000;
+            width: 120px;
+            flex-shrink: 0;
+        }
+
+        .establishment {
+            margin-left: 20px;
+            flex-grow: 1;
+        }
+
+        .languages {
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #800000;
+            border-radius: 5px;
+        }
+
+        .back-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            color: #800000;
+            border: 2px solid #800000;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: rgba(128, 0, 0, 0.1);
+        }
+
+        .education-group {
+            border: 2px solid #800000;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: 1px solid #800000;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="info">
+            <div>
+                <h1>Soufiane ZOUGAGH</h1>
+                <p>75008 Paris</p>
+                <p>+33 7 12 34 56 78</p>
+                <p>soufianezougaghpro@gmail.com</p>
+            </div>
+            <div class="profile-picture">
+                <img src="https://i.pinimg.com/550x/4d/e3/e9/4de3e9f381c16fb5ffd0ebc2664f9568.jpg"
+                    alt="Photo de Soufiane Zougagh">
+            </div>
+        </div>
+
+        <section>
+            <h2>FORMATION</h2>
+            <hr>
+            <div class="experience-item">
+                <div class="date">2024</div>
+                <div class="establishment">BTS SIO - CFA INGETIS</div>
+            </div>
+            <div class="experience-item">
+                <div class="date">2021</div>
+                <div class="establishment">UNIVERSITE PARIS 8</div>
+            </div>
+                        <div class="experience-item">
+                            <div class="date">2018</div>
+                            <div class="establishment">LYCEE JEAN RENOIR - BAC ES </div>
+                        </div>
+        </section>
+
+        <section>
+            <h2>EXPERIENCES</h2>
+            <hr> <!-- Ligne sous la section EXPERIENCES -->
+            <div class="experience-group">
+                <div class="experience-item">
+                    <div class="date">2024</div>
+                    <div class="establishment">CORRESPONDANT INFORMATIQUE - BDF</div>
+                </div>
+                <div class="experience-item">
+                    <div class="date">2023</div>
+                    <div class="establishment">VENDEUR POLYVALENT - PRIMARK</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>LANGUES & COMPETENCES INFORMATIQUES</h2>
+            <hr>
+            <div class="experience-item">
+                <div class="date">LANGUES</div>
+                <div class="establishment">FRANÇAIS, ANGLAIS, ESPAGNOL</div>
+            </div>
+            <div class="experience-item">
+                <div class="date">INFORMATIQUE</div>
+                <div class="establishment">PACK OFFICE, HTML, CSS, PYTHON</div>
+            </div>
+        </section>
+    </div>
+    <a href="../index.html" class="back-button">Retour..</a>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Principale</title>
+    <style>
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #A50044;
+            margin-bottom: 20px;
+        }
+
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        iframe {
+            border: 2px solid #004D98;
+            margin: 10px;
+            height: 500px;
+        }
+
+        .button {
+            background-color: #A50044;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #004D98;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Page Principale</h1>
+
+    <div class="iframe-container">
+        <iframe src="sommaire.html" width="30%" name="f1"></iframe>
+        <iframe src="page3.html" width="65%" name="f2"></iframe>
+    </div>
+
+    <a href="../index.html" class="button">Retour au sommaire</a>
+
+</body>
+
+</html>
